@@ -1,0 +1,92 @@
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify; /*căn đều 2 bên*/
+}
+
+header {
+    background-color: #bebebe;
+    padding: 25px 0;
+}
+
+header nav {
+    float:left;
+}
+
+header nav a {
+    color: black;
+    background-color: #dcdcdc;
+    text-decoration: none; /*gạch chân*/
+    font-size: 18px;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.text-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px; /*khoảng cách giữa chữ và hình*/
+}
+
+.text-image img {
+    width: 250px;
+    height: 170px;
+}
+
+.text-image p {
+    flex: 2;
+}
+
+.long-text {
+    margin-bottom: 20px;
+}
+
+.list-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+
+.item {
+    flex: 1 1 calc(15% - 15px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 25px;
+    text-align: center;
+}
+
+.item h3 {
+    margin-top: 0%;
+    font-size: 18px;  
+    text-align: left;
+}
+
+.item p {
+    margin-top: 0%;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 100%;
+}
