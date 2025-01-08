@@ -1,92 +1,127 @@
+* {
+    box-sizing: border-box;
+}
 
+/* Container */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: justify; /*căn đều 2 bên*/
+    font-weight: 400;
+    margin: 24px auto 0 auto;
+    width: 1296px;
 }
 
-header {
-    background-color: #bebebe;
-    padding: 25px 0;
+/* Header */
+.header {
+    background: #CCCCCC;
 }
 
-header nav {
-    float:left;
+.header li {
+    /* top:20 right:17 bottom:17 left:17  */
+     /*padding : top:  left-16px-top */ 
+    padding: 12px 17px 14px 17px;
+    list-style-type: none;
+    float: left;
+    background: #DDD;
+    border-right: 1px solid #CCC
 }
 
-header nav a {
-    color: black;
-    background-color: #dcdcdc;
-    text-decoration: none; /*gạch chân*/
-    font-size: 18px;
+.header .last-li {
+    border: 0px;
 }
 
-main {
-    margin: 20px 0;
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-.text-image {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    gap: 20px; /*khoảng cách giữa chữ và hình*/
+/* Content */
+.content {
+    margin-top: 24px;
 }
 
-.text-image img {
-    width: 250px;
-    height: 170px;
+.content .img {
+    width: 253px;
+    height: 168px;
 }
 
-.text-image p {
-    flex: 2;
+.content .img-1 {
+    float: left;
+    margin-right: 26px;
 }
 
-.long-text {
-    margin-bottom: 20px;
+.content p {
+    text-align: justify;
+    line-height: 23px;
 }
 
-.list-section h2 {
+.content .paragraph-2 {
+    margin-top: 23px;
+}
+
+.content .img-2 {
+    margin-left: 26px;
+    margin-top: 30px;
+    float: right;
+}
+
+/* List */
+
+.list .title {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
+    font-size: 22px;
+    margin-bottom: 9px;
 }
 
-.item-list {
-    display: flex;
-    flex-wrap:wrap;
-    gap: 15px;
+
+/* Card Group */
+.list .card-group {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
-.item {
-    flex: 1 1 calc(15% - 15px);
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 25px;
-    text-align: center;
+.list .card-group .card {
+    float: left;
+    border: 1px solid #DEE2E6;
+    width: 23.6%;
+    height: 245px;
+    margin-right: 9px;
+    margin-left: 9px;
 }
 
-.item h3 {
-    margin-top: 0%;
-    font-size: 18px;  
-    text-align: left;
+/* Inner */
+
+.list .inner {
+    position: relative;
 }
 
-.item p {
-    margin-top: 0%;
-    font-size: 14px;
-    margin-bottom: 15px;
-    text-align: left;
+.list .inner h1 {
+    font-size: 22px;
+    margin-left: 19px;
 }
 
-.item button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 10px;
-    cursor: pointer;
+.list .inner p {
+    padding-right: 50px;
+    margin-top: -9px;
+    margin-left: 19px;
+    line-height: 23px;
+}
+
+.list .inner button {
+    position: absolute;
     width: 100%;
+    border: none;
+    background-color: #166EFD;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    top:192px;
+    font-size: 15.5px;
+}
+
+/* Clearfix */
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
 }
